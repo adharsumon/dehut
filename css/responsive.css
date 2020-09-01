@@ -1,0 +1,327 @@
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .navbar-toggler {
+        font-size: 16px;
+        color: #fff !important;
+        border: 0;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: column !important;
+        background: var(--textColor);
+        width: 100% !important;
+        margin-top: 15px;
+        padding: 15px 0;
+    }
+
+    .banner_text h3 {
+        font-size: 70px;
+    }
+
+    .banner_text h2 {
+        font-size: 40px;
+    }
+
+    .about_me {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+
+    .about_detail {
+        margin-top: 30px;
+    }
+
+    .services_part {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+
+    .portfolio_part {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+
+    .counter_overlay {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .pricing_part {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+
+    .row.contact_area {
+        margin-top: 15px;
+    }
+
+    .contact_part {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+
+    .address_text .addd {
+        letter-spacing: 0;
+    }
+
+    .contact_formm .namm {
+        width: 49.5%;
+    }
+}
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .navbar-toggler {
+        font-size: 16px;
+        color: #fff !important;
+        border: 0;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: column !important;
+        background: var(--textColor);
+        width: 100% !important;
+        margin-top: 15px;
+        padding: 15px 0;
+    }
+
+    .banner_text h3 {
+        font-size: 70px;
+    }
+
+    .banner_text h2 {
+        font-size: 40px;
+        padding-top: 7px !important;
+        margin-bottom: 12px;
+    }
+
+    .about_me {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+
+    .about_detail {
+        margin-top: 30px;
+    }
+
+    .services_part {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+
+    .single_service.hvr-curl-top-left.mt-55 {
+        margin-top: 25px;
+    }
+
+    .single_service h3 {
+        font-size: 20px;
+    }
+
+    .portfolio_part {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+
+    .work_button {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    .work_button button {
+        margin: 5px 0;
+    }
+
+    .counter_overlay {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .pricing_part {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+
+    .row.contact_area {
+        margin-top: 15px;
+    }
+
+    .contact_part {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+
+    .stat-items.ress {
+        margin-top: 15px;
+    }
+
+    .single_contact {
+        display: flex;
+        justify-content: center;
+    }
+    .contact_mapp {
+        margin-top: 30px;
+    }
+    .address_text .addd {
+        letter-spacing: 1px;
+    }
+
+    .address_text .mobb {
+        letter-spacing: 6px;
+    }
+
+    .contact_formm .namm {
+        width: 49.5%;
+    }
+
+   
+}
+
+/*// Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .navbar-toggler {
+        font-size: 16px;
+        color: #fff !important;
+        border: 0;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: column !important;
+        background: var(--textColor);
+        width: 100% !important;
+        margin-top: 15px;
+        padding: 15px 0;
+    }
+
+    .banner_text h3 {
+        font-size: 45px;
+    }
+
+    .banner_text h2 {
+        font-size: 20px;
+        padding-top: 7px !important;
+        margin-bottom: 12px;
+    }
+    .section_title h2 {
+        font-size: 25px;
+    }
+    .about_me {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+    .about_imgage {
+        padding-top: 25px;
+    }
+    .about_detail {
+        margin-top: 25px;
+    }
+
+    .services_part {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+
+    .single_service.hvr-curl-top-left.mt-55 {
+        margin-top: 25px;
+    }
+
+    .single_service h3 {
+        font-size: 20px;
+    }
+
+    .portfolio_part {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+
+    .work_button {
+        margin-top: 30px;
+    }
+
+    .work_button button {
+        margin: 5px 0;
+    }
+
+    .counter_overlay {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .pricing_part {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+
+    .row.contact_area {
+        margin-top: 15px;
+    }
+
+    .contact_part {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+
+    .stat-items.ress {
+        margin-top: 15px;
+    }
+
+    .single_contact {
+        display: flex;
+    }
+    .contact_mapp {
+        margin-top: 30px;
+    }
+    .address_text .addd {
+        letter-spacing: 1px;
+    }
+    .address_text h4 {
+        font-size: 22px;
+    }
+    .address_text .mobb {
+        letter-spacing: 5px;
+    }
+
+    .contact_formm .namm {
+        width: 100%;
+    }
+
+    .contact_formm .maill {
+        width: 100%;
+    }
+
+  
+}

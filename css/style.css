@@ -1,0 +1,796 @@
+/*
+  Theme Name: DeHut
+  Author: AdharSumon
+  Support: hasanur.themefo@gmail.com
+  Description: Personal Portfolio HTML5 template.
+  Version: 1.0
+*/
+
+/* CSS Index
+-----------------------------------
+01. THEME DEFAULT CSS
+02. HEADER PART CSS
+03. BANNER PART CSS
+04. ABOUT ME PART CSS
+05. SERVICES PART CSS
+06. PORTFOLIO PART CSS
+07. COUNTER PART CSS
+08. PRICING PART CSS
+09. CONTACT PART CSS
+10. FOOTER PART CSS
+*/
+
+/*=============================
+    01. THEME DEFAULT CSS
+==============================*/
+
+/*Google Font*/
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+dl,
+ol,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Abel', sans-serif;
+    font-weight: 400;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.bg_cover {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.clr {
+    clear: both;
+}
+
+.custom-container {
+    padding: 0 70px;
+}
+
+:root {
+    --textColor: #212529;
+    --w_color: #f1f1f1;
+    --hcolor: #FF1D58;
+}
+
+/*ALL SECTION TITLE HERE*/
+.section_title {
+    display: inline-block;
+}
+
+.section_title h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--textColor);
+}
+
+.section_title span {
+    display: inline-block;
+    width: 100px;
+    height: 2px;
+    background: var(--hcolor);
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.section_title:hover span {
+    width: 140px;
+}
+
+/* PRELOADER CSS */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: 100000000000000000;
+    width: 100%;
+    height: 100vh;
+}
+
+.loader_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+}
+
+/*END OF COMMON CSS*/
+
+/*=============================
+    02.  HEADER CSS
+==============================*/
+.navbar {
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+    background: #dddddd0a !important;
+    padding: 15px;
+}
+
+.navbar-expand-lg .navbar-nav {
+    -ms-flex-direction: row;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header_logo img {
+    height: 35px !important;
+}
+
+.nav-link {
+    margin-left: 25px;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: var(--w_color) !important;
+    padding: 10px 15px !important;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+/* STICKY MENU */
+.navbar.sticky {
+    position: fixed;
+    background: var(--textColor) !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999999999;
+    animation: stickyAni 3s;
+}
+
+@keyframes stickyAni {
+    from {
+        transform: translateY(-100%);
+        -webkit-transform: translateY(-100%);
+        -moz-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        -o-transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+/*=============================
+    03.  BANNER CSS
+==============================*/
+.single_banner.bg_cover {
+    width: 100%;
+    height: 100vh;
+}
+
+.banner_overlay {
+    width: 100%;
+    display: inline-block;
+    background: rgba(26, 26, 26, 0.781);
+    height: 100vh;
+}
+
+.banner_text {
+    position: absolute !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+
+.banner_text h3 {
+    color: var(--w_color);
+    font-size: 80px;
+    text-transform: capitalize;
+    display: block !important;
+    width: 100% !important;
+    font-weight: 700;
+}
+
+.banner_text h2 {
+    display: inline-block;
+    color: var(--w_color);
+    font-size: 60px;
+    font-weight: 500;
+    text-transform: inherit;
+}
+
+.banner_social_icon {
+    padding-top: 15px;
+}
+
+.banner_social_icon .fa {
+    color: var(--w_color);
+    background: transparent;
+    border: 1px solid var(--w_color);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.banner_social_icon .fa:hover {
+    background: #FF1D58;
+    color: var(--w_color);
+    border: 1px solid transparent;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+/*=============================
+    04.  ABOUT ME CSS
+==============================*/
+.row.ttt {
+    display: flex;
+    align-items: center;
+}
+
+.about_detail h4 {
+    color: var(--hcolor);
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.about_detail .two {
+    display: inline-block;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding-top: 5px !important;
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--hcolor);
+}
+
+.about_detail .three {
+    display: block;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.about_detail p {
+    text-align: justify;
+    font-size: 16px;
+    padding-top: 5px;
+    color: var(--textColor);
+}
+
+.about_imgage {
+    padding-top: 52px;
+}
+
+.about_btn {
+    padding-top: 25px;
+}
+
+.about_btn button {
+    font-size: 20px;
+    text-transform: capitalize;
+    border: 0;
+    background: var(--textColor);
+    color: var(--w_color);
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+
+/*=============================
+    05. SERVICES PART CSS
+==============================*/
+.services_part {
+    background: #f1f1f1;
+}
+
+.single_service {
+    border: 1px solid #2222220f;
+    padding: 15px 20px;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.single_service .fa {
+    font-size: 45px;
+    color: var(--hcolor);
+}
+
+.single_service h3 {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--textColor);
+    padding-top: 16px;
+}
+
+.single_service span {
+    display: inline-block;
+    background: var(--hcolor);
+    width: 70px;
+    height: 1px;
+    margin-bottom: 10px !important;
+}
+
+.single_service p {
+    color: var(--textColor);
+    font-weight: 400;
+    text-align: justify;
+}
+
+.single_service:hover {
+    -webkit-box-shadow: -1px 1px 5px 4px rgba(0, 0, 0, 0.29);
+    box-shadow: -1px 1px 5px 4px rgba(0, 0, 0, 0.29);
+}
+
+/*=============================
+    06. PORTFOLIO PART CSS
+==============================*/
+.work_button {
+    text-align: center;
+    margin-top: 52px;
+}
+
+.work_button button {
+    font-size: 20px;
+    border: 0;
+    background: var(--hcolor);
+    color: var(--w_color);
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-weight: 500;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    margin: 0 5px;
+
+}
+
+.work_button button:hover {
+    background: transparent;
+    color: var(--textColor);
+}
+
+.work_image {
+    position: relative;
+}
+
+.work_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.work_overlay .fa {
+    font-size: 40px;
+    color: var(--w_color);
+}
+
+.work_image:hover .work_overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*=============================
+    07. COUNTER PART CSS
+==============================*/
+.counter_part {
+    background-attachment: fixed !important;
+}
+
+.counter_overlay {
+    background: rgba(33, 37, 41, 0.603);
+    width: 100%;
+    height: 100%;
+    padding: 100px 0;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.stat-items .fa {
+    font-size: 40px;
+    color: var(--w_color);
+    border: 1px solid var(--w_color);
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 5px;
+}
+
+.stat-items h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 15px;
+    color: var(--w_color);
+}
+
+.stat-items p {
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin-top: 5px;
+    color: var(--w_color);
+}
+
+.counter_overlay:hover p {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+/*=============================
+    08. PRICING PART CSS
+==============================*/
+.pricingTable {
+    text-align: center;
+    background: #fff;
+    margin-top: 53px;
+    transition: all .3s linear;
+    overflow: hidden;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.pricingTable>.pricingTable-header {
+    color: #fff;
+    background: var(--hcolor);
+    height: 190px;
+    position: relative;
+    transition: all .3s linear;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 77%);
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.pricingTable:hover .pricingTable-header {
+    height: 210px;
+    background: var(--textColor);
+}
+
+.pricingTable-header>.heading {
+    display: block;
+    padding: 20px 0;
+}
+
+.heading>h3 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.pricingTable-header>.price-value {
+    display: block;
+    font-size: 60px;
+    line-height: 60px;
+}
+
+.pricingTable-header>.price-value>.mo {
+    font-size: 16px;
+    display: block;
+    line-height: 0px;
+    text-transform: uppercase;
+}
+
+.pricingTable-header>.price-value>.currency {
+    font-size: 24px;
+    margin-right: 4px;
+    position: relative;
+    bottom: 30px;
+}
+
+.pricingTable>.pricingContent {
+    text-transform: uppercase;
+    color: #000
+}
+
+.pricingTable>.pricingContent>ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pricingTable>.pricingContent>ul>li {
+    padding: 10px 0;
+    border-bottom: 1px solid #000;
+    font-size: 16px;
+    color: var(--textColor);
+}
+
+.pricingTable>.pricingContent>ul>li:last-child {
+    border: 0px none;
+}
+
+.pricingTable-sign-up {
+    padding-top: 10px;
+}
+
+.pricingTable-sign-up>.btn-block {
+    width: 80%;
+    margin: 0 auto;
+    background: var(--hcolor);
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 15px 12px;
+    text-transform: uppercase;
+    font-size: 20px;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.pricingTable:hover .btn-block {
+    background: var(--textColor);
+}
+
+.pricingTable-sign-up>.btn-block:hover {
+    opacity: 0.8;
+}
+
+/*=============================
+    09. CONTACT PART CSS
+==============================*/
+.contact_part {
+    background: var(--w_color);
+}
+
+.row.contact_area {
+    display: flex !important;
+    align-items: center !important;
+    margin-top: 52px;
+}
+
+.single_contact {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.iconn .fa {
+    font-size: 20px;
+    color: var(--hcolor);
+    border: 1px solid var(--hcolor);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.address_text h3 {
+    font-size: 24px;
+    color: var(--textColor);
+    font-weight: 500;
+}
+
+.address_text .loc {
+    color: var(--hcolor);
+}
+
+.address_text .addd {
+    color: var(--textColor);
+    font-size: 16px;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+}
+
+.address_text h4 {
+    font-size: 24px;
+    text-transform: lowercase;
+    font-weight: 500;
+}
+
+.address_text .mobb {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+.contact_mapp {
+    position: relative;
+    cursor: pointer;
+}
+
+.map_overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.contact_mapp:hover .map_overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.map_overlay .fa {
+    text-align: center !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: var(--w_color);
+}
+
+.contact_formm .namm {
+    width: 50%;
+    font-size: 16px;
+    text-transform: lowercase;
+    padding: 15px 20px;
+    font-weight: 500;
+    margin-top: 30px;
+    border: 1px solid #ccc;
+}
+
+.contact_formm .maill {
+    font-size: 16px;
+    text-transform: lowercase;
+    width: 49.5%;
+    padding: 15px 20px;
+    font-weight: 500;
+    margin-top: 30px;
+    border: 1px solid #ccc;
+}
+
+.contact_formm .subb {
+    width: 100%;
+    font-size: 16px;
+    text-transform: lowercase;
+    padding: 0 20px;
+    height: 100px;
+    font-weight: 500;
+    display: block;
+    margin-top: 30px;
+    border: 1px solid #ccc;
+}
+
+.contact_formm .messs {
+    width: 100%;
+    font-size: 16px;
+    text-transform: lowercase;
+    font-weight: 500;
+    padding: 15px 20px;
+    margin-top: 30px;
+    border: 1px solid #ccc;
+}
+
+.contact_formm ::placeholder {
+    color: var(--hcolor);
+    text-transform: capitalize;
+}
+
+.contact_formm .send_btn {
+    font-size: 20px;
+    background: var(--hcolor);
+    color: var(--w_color);
+    border: 0;
+    padding: 15px 50px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+/*=============================
+    10. FOOTER PART CSS
+==============================*/
+.footer_left {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer_logo img {
+    height: 35px !important;
+}
+
+.footer_left span {
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin-top: 15px;
+}
